@@ -1,0 +1,172 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+a
+{
+	color: #DD4F24;
+	text-decoration: none;
+}
+body
+{
+	background: #EFEFEF;
+	color: #4C4C4C;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 16px;
+	margin: 0px;
+}
+button
+{
+	background: #707070;
+	border: 1px solid transparent;
+	border-bottom: 2px solid #505050;
+	border-radius: 5px;
+	color: white;
+	font-family: 'Tulpen One', cursive;
+	font-weight: bold;
+	font-size: 1em;
+	margin-top: 0;
+	padding: 1.5em 1em 1.5em 1em;
+	text-align: center;
+	width: 18%;
+}
+footer
+{
+	background: #434343;
+	color: white;
+	font-family: 'Chango';
+	padding: 1em 0;
+	text-align: center;
+}
+footer p
+{
+	font-family: 'Exo 2', sans-serif;
+	margin: 0;
+}
+footer #info:after
+{
+	color: white;
+	content: "\e60f + \e610 + \e611";
+	font-family: "icomoon";
+}
+header
+{
+	background: -moz-linear-gradient(top,  #9d0019 0%, #380101 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9d0019), color-stop(100%,#380101)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #9d0019 0%,#380101 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #9d0019 0%,#380101 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #9d0019 0%,#380101 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #9d0019 0%,#380101 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9d0019', endColorstr='#380101',GradientType=0 ); /* IE6-9 */
+	color: white;
+	padding: 0.5em;
+	text-align: center;
+}
+header h1
+{
+	font-family: 'Carrois Gothic SC', sans-serif;
+	font-size:  1.2em;
+	font-weight: normal;
+}
+nav
+{
+	background: #5A6F9B;
+	border-radius: 10px;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	margin: 0.5em 10px 0 10px;
+	padding: 0.5em 1em;
+}
+#barra_lateral
+{
+	display: none;
+}
+#contenedor
+{
+	margin: 1em 0.5em 2em 0.5em;
+}
+#contenedor .calculadora
+{
+	background: #060C18;
+	border-radius: 2px 2px 40px 40px;
+	padding: 0.5em 0.2em 1em 0.2em;
+	text-align: center;
+}
+#entre:after
+{
+	content: "\e606";
+	font-family: "icomoon";
+	font-size: 0.8em;
+}
+#mas:after
+{
+	content: "\e607";
+	font-family: "icomoon";
+	font-size: 0.8em;
+}
+#menos:after
+{
+	content: "\e608";
+	font-family: "icomoon";
+	font-size: 0.8em;
+}
+#por:after
+{
+	content: "\e609";
+	font-family: "icomoon";
+	font-size: 0.8em;
+}
+#porciento:after
+{
+	content: "\e60a";
+	font-family: "icomoon";
+	font-size: 0.8em;
+}
+.calc
+{
+	background: #004D2A;
+	border-bottom: 2px solid #0B2A08;
+}
+.inputstyle
+{
+	background: #D4F7A4;
+	border-radius: 10px;
+	font-family: 'Aldrich', sans-serif;
+	font-size: 2em;
+	padding: 1em 1em 0.5em 0;
+	text-align: right;
+	width: 80%
+}
+.info_screens
+{
+	display: inline-block;
+	float: right;
+}
+.info_screens p:after
+{
+	color: white;
+	content: "\e600  \e602  \e602";
+	font-family: "icomoon";
+	text-shadow: 0.1em 0.1em 0.2em black;
+}
+.misc
+{
+	background: #F83E5B;
+	border-bottom: 2px solid #5B1515;
+	padding: 1.5em 0.5em 1.5em 0.5em;
+}
+.selector
+{
+	background: white;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	padding: 0.5em 1em
+}

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+ 
+<html lang="es">
+ 
+<head>
+<title>Calculadora</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link href='http://fonts.googleapis.com/css?family=Exo+2:300|Carrois+Gothic+SC|Tulpen+One|Aldrich' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="stylecalc.css" />
+<link rel="stylesheet" type="text/css" href="responsivecalc.css" />
+<script type="text/javascript" src="javascript/prefixfree.min.js"></script>
+</head>
+ 
+<body>
+ 	<header>
+		<h1 id="titulo_header"><strong>Calculadora</strong><br> HTML5 + CSS3 + Javascript</h1>
+	</header>
+	<nav>
+		<select class="selector">
+			<option id="sencilla_nav" id="1">Sencilla</option>
+			<option id="cientifica_nav" id="2">Científica</option>
+			<option id="programador_nav" id="3">Programador</option>
+			<option id="ipvlsm_nav" id="4">IPv4 + VLSM</option>
+		</select>
+		<div class="info_screens">
+			<p>
+			</p>
+		</div>
+	</nav>
+	<aside id="barra_lateral">
+		<h2>Memoria:</h2>
+		<hr>
+		<p>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</p>
+	</aside>
+	<section id="contenedor">
+	<article class="calculadora">
+		<input id="entrada" class="inputstyle" type="text" maxlength="6" size="3" value="0">
+		<p>
+			<button id="siete">7</button>
+			<button id="ocho">8</button>
+			<button id="nueve">9</button>
+			<button id="del" class="misc">DEL</button>
+			<button id="ac" class="misc">AC</button>
+		</p>
+		<p>
+			<button id="cuatro">4</button>
+			<button id="cinco">5</button>
+			<button id="seis">6</button>
+			<button id="por"></button>
+			<button id="entre"></button>
+		</p>
+		<p>
+			<button id="uno">1</button>
+			<button id="dos">2</button>
+			<button id="tres">3</button>
+			<button id="mas"></button>
+			<button id="menos"></button>
+		</p>
+		<p>
+			<button id="cero">0</button>
+			<button id="punto">.</button>
+			<button id="pi">PI</button>
+			<button id="porciento"></button>
+			<button id="igual" class="calc">=</button>
+		</p>
+	</article>
+	</section>
+    <footer>
+    	<p>by Dani Vega</p>
+    	<p>- www.vegatech.mx -</p>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		var x = 0,
+			y = 0,
+			dig = 1,
+			$input = $('#entrada'),
+			$siete = $('#siete'),
+			$ocho = $('#ocho'),
+			$nueve = $('#nueve'),
+			$del = $('#del'),
+			$ac = $('#ac'),
+			$cuatro = $('#cuatro'),
+			$cinco = $('#cinco'),
+			$seis = $('#seis'),
+			$por = $('#por'),
+			$entre = $('#entre'),
+			$uno = $('#uno'),
+			$dos = $('#dos'),
+			$tres = $('#tres'),
+			$mas = $('#mas'),
+			$menos = $('#menos'),
+			$cero = $('#cero'),
+			$punto = $('#punto'),
+			$pi = $('#pi'),
+			$porciento = $('#porciento'),
+			$igual = $('#igual'),
+			$op = 1
+
+			function calcular()
+			{
+				var op, a, b, res;
+
+				a = parseInt($jqa.val());
+				b = parseInt($jqb.val());
+				op = $jqop.val();
+
+				if(op == '+')
+				{
+					res = a + b
+				}
+				else if(op == '-')
+				{
+					res = a - b
+				}
+				else if(op == '*')
+				{
+					res = a * b
+				}
+				else
+				{
+					res = a / b
+				}
+				$jqres.val(res)
+			}
+		$siete.on('click', function()
+			{
+				if($input.val()!="0")
+				{
+					$input.val($input.val()+'7')
+				}
+				else
+				{
+					$input.val("") 
+					$input.val($input.val()+'7')
+				}
+			})
+		$ocho.on('click', function()
+			{
+				if($input.val()!="0")
+				{
+					$input.val($input.val()+'8')
+				}
+				else
+				{
+					$input.val("")
+					$input.val($input.val()+'8')
+				}
+			})
+		$nueve.on('click', function()
+			{
+				if($input.val()!="0")
+				{
+					$input.val($input.val()+'9')
+				}
+				else
+				{
+					$input.val("")
+					$input.val($input.val()+'9')
+				}
+			})
+		$cuatro.on('click', function()
+			{
+				if($input.val()!="0")
+				{
+					$input.val($input.val()+'4')
+				}
+				else
+				{
+					$input.val("")
+					$input.val($input.val()+'4')
+				}
+			})
+		$cinco.on('click', function()
+			{
+				if($input.val()!="0")
+				{
+					$input.val($input.val()+'5')
+				}
+				else
+				{
+					$input.val("")
+					$input.val($input.val()+'5')
+				}
+			})
+		$seis.on('click', function()
+			{
+				if($input.val()!="0")
+				{
+					$input.val($input.val()+'6')
+				}
+				else
+				{
+					$input.val("")
+					$input.val($input.val()+'6')
+				}
+			})
+		$uno.on('click', function()
+			{
+				if($input.val()!="0")
+				{
+					$input.val($input.val()+'1')
+				}
+				else
+				{
+					$input.val("")
+					$input.val($input.val()+'1')
+				}
+			})
+		$dos.on('click', function()
+			{
+				if($input.val()!="0")
+				{
+					$input.val($input.val()+'2')
+				}
+				else
+				{
+					$input.val("")
+					$input.val($input.val()+'2')
+				}
+			})
+		$tres.on('click', function()
+			{
+				if($input.val()!="0")
+				{
+					$input.val($input.val()+'3')
+				}
+				else
+				{
+					$input.val("")
+					$input.val($input.val()+'3')
+				}
+			})
+		$punto.on('click', function()
+			{
+				$input.val($input.val()+'.')
+			})
+
+
+		$mas.on('click', function()
+			{
+				$input.val($input.val()+'+')
+				
+			})
+		$menos.on('click', function()
+			{
+				$input.val($input.val()+'-')
+			})
+		$por.on('click', function()
+			{
+				$input.val($input.val()+'*')
+			})
+		$entre.on('click', function()
+		{
+			$input.val($input.val()+'/')
+		})
+
+		$del.on('click', function()
+			{
+				if($input.val() != "" && $input.val() != "0")
+				{ 
+					$input.val($input.val().substring(0,$input.val().length-1))
+				}
+				if($input.val()==""){$input.val("0")} 
+			})
+
+		$ac.on('click',function(){$input.val("0")})
+	</script>
+</body>
+</html>
